@@ -9,10 +9,11 @@ Summary:        Pretty Good Privacy for Python
 License:        BSD-3-Clause
 URL:            https://github.com/SecurityInnovation/PGPy
 Source0:        https://files.pythonhosted.org/packages/source/p/%{pypi_name}/PGPy-%{pypi_version}.tar.gz
+Patch0001:      cryptography-min-version.patch
 BuildArch:      noarch
 
 BuildRequires:  python3-devel
-BuildRequires:  python3dist(cryptography) >= 3.3.2
+BuildRequires:  python3dist(cryptography)
 BuildRequires:  python3dist(pyasn1)
 BuildRequires:  python3dist(setuptools)
 BuildRequires:  python3dist(pytest)
